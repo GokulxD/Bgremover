@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 from io import BytesIO
 
-app = Client("my_bot")
+app = Client("")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = torch.hub.load('facebookresearch/ESRGAN', 'esrgan', pretrained=True).to(device).eval()
